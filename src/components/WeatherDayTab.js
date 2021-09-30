@@ -2,13 +2,14 @@
 
 const WeatherDayTab = ({day}) => {
 
-  //Decontructing Weather Data
+  //Deconstructing Weather Data
   const { day: { condition: {text: condition}, avgtemp_f: avgTempF, maxtemp_f: maxTempF, mintemp_f: minTempF, avghumidity: avgHum, maxwind_mph: maxWind, daily_chance_of_rain: rainChance, daily_chance_of_snow: snowChance, avgvis_miles: avgVis}, astro: { sunrise: sunRise, sunset: sunSet }, date: tabDay } = day;
 
-  //Initializing Weather Tab Day
-  const d = new Date(tabDay);
-  const n = d.getDay();
-  const week = ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'];
+  //Declaring Date
+  const week = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+  const currTabDate = new Date(tabDay + 'T00:00:00');
+  const weekIndex = currTabDate.getDay()
+  const formatDate = currTabDate.toLocaleDateString('en-US', {month: '2-digit', day: '2-digit', year: '2-digit', });
 
   //JSX
   return (
@@ -19,8 +20,8 @@ const WeatherDayTab = ({day}) => {
           <img src='https://j.theweathernetwork.com/wx_icons/v1/8.png' alt='' style={{zIndex: 11, marginLeft: 100, padding: 0, maxHeight: 140,position: 'absolute'}}></img>
             <div className='tab'>
               <div id='weather'>
-                <p>{week[n]}</p>
-                <p style={{fontSize: 26, color: 'yellow'}}>{tabDay}</p>
+                <p>{week[weekIndex]}</p>
+                <p style={{fontSize: 26, color: 'yellow'}}>{formatDate}</p>
                 <p style={{fontSize: 26, color: 'yellow'}}>{condition}</p>
                 <p style={{fontSize: 26, color: 'yellow'}}>Avg: {avgTempF} F°</p>
                 <p style={{fontSize: 14}}>___________________________</p>
