@@ -52,7 +52,7 @@ code {
 }
 
 .tab-border {
-  min-width: 15%;
+
   height: 390px;
   margin-left: 20px;
   margin-right: 40px;
@@ -76,19 +76,22 @@ code {
 }
 
 .tab {
-  background: black;
-  width: 93%;
+  margin-top: 210px;
+  background: rgb(48, 48, 48);
+  margin-left: 7.6%;
+  min-width: 40%;
   height: 380px;
-  margin-top: 5px;
-  margin-left: 8px;
-  /* filter: opacity(80%);
-  -webkit-filter: opacity(80%);
-  -moz-filter: opacity(80%);
-  backdrop-filter: blur(60px); */
-  border-radius: 8px 50px 49px 6px;
+  filter: opacity(75%);
+  -webkit-filter: opacity(75%);
+  -moz-filter: opacity(75%);
+  backdrop-filter: blur(75px);
+  /* border-radius: 8px 50px 49px 6px;
   -webkit-border-radius: 8px 50px 49px 6px;
-  -moz-border-radius: 8px 50px 49px 6px;
+  -moz-border-radius: 8px 50px 49px 6px; */
   /* position: absolute; */
+  box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
+  -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
+  -moz-box-shadow: 1px 17px 35px 4px rgba(0,0,0,0.87);
   z-index: 8;
 }
 
@@ -101,11 +104,31 @@ code {
 }
 
 #weather {
+  margin-left: 5%;
   color: white;
   width: 300px;
   font-size: 50px;
   position: absolute;
   z-index: 9;
+}
+
+#weather-icon {
+  z-Index: 11;
+  width: 40%;
+  margin-left: 54%;
+  filter: opacity(75%);
+  -webkit-filter: opacity(75%);
+  -moz-filter: opacity(75%);
+  backdrop-filter: blur(75px);
+  position: absolute;
+}
+
+.tab:hover {
+  background: rgb(99, 99, 99);
+  filter: opacity(75%);
+  -webkit-filter: opacity(75%);
+  -moz-filter: opacity(75%);
+  backdrop-filter: blur(75px);
 }
 
 
