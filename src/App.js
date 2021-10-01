@@ -50,7 +50,7 @@ function App() {
   //fetch weatherapi.com API
   const fetchWeather = async () => {
 
-    const res = await fetch('http://api.weatherapi.com/v1/forecast.json?key=e1612587cc4f411b99243952212409&q=91307&days=9&aqi=yes&alerts=yes');
+    const res = await fetch('https://api.weatherapi.com/v1/forecast.json?key=e1612587cc4f411b99243952212409&q&q=Los Angeles&days=10&aqi=yes&alerts=yes');
     const data = await res.json();
     console.log('Weather Data: ', data);
     return data;
