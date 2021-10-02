@@ -29,7 +29,7 @@ const WeatherDayTab = ({day}) => {
       <div className='tab'>
       <img src={weatherIconSrc} alt='' id='weather-icon'></img>
         <div id='weather'>
-          <p>{week[weekIndex]}</p>
+          <p id='weather-day'>{week[weekIndex]}</p>
           <p style={{fontSize: 26, color: 'yellow'}}>{formatDate}</p>
           <p style={{fontSize: 26, color: 'yellow'}}>{condition}</p>
           <p style={{fontSize: 26, color: 'yellow'}}>Avg: {avgTempF} F°</p>

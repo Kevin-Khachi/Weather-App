@@ -81,6 +81,7 @@ code {
   margin-left: 7.6%;
   min-width: 40%;
   height: 380px;
+  padding-bottom: 4.2%;
   filter: opacity(75%);
   -webkit-filter: opacity(75%);
   -moz-filter: opacity(75%);
@@ -103,11 +104,14 @@ code {
   height: 100vh;
 }
 
+#weather-day {
+  font-size: 3rem;
+}
+
 #weather {
   margin-left: 5%;
   color: white;
-  width: 300px;
-  font-size: 50px;
+  width: 55%;
   position: absolute;
   z-index: 9;
 }

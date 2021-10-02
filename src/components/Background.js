@@ -24,8 +24,8 @@ const Background = () => {
     try {
     const client = createClient('563492ad6f9170000100000139d0d4eff1a9443e9798b3bbaed0e386');
     let query = 'Los Angeles';
-    let randomPic = Math.floor(Math.random() * 71);
-    const data = await client.photos.search({query, per_page: 70});
+    let randomPic = Math.floor(Math.random() * 61);
+    const data = await client.photos.search({query, per_page: 60});
     console.log('Photo Data: ', data);
     let picWidth = data.photos[randomPic].width;
     let picHeight = data.photos[randomPic].height;
@@ -40,7 +40,7 @@ const Background = () => {
     return url;
     } catch (error) {
       console.log(error + ' - Displaying Default Background');
-      return 'https://source.unsplash.com/4096x2160/?nature,water';
+      return 'https://images.unsplash.com/photo-1462823985959-022de68638a2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=2160&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTYzMzEzMTc5MA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=4096';
     }
 
   }
@@ -52,4 +52,4 @@ const Background = () => {
 
 }
 
-export default Background
+export default Background;
