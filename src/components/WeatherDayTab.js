@@ -30,19 +30,19 @@ const WeatherDayTab = ({day}) => {
       <img src={weatherIconSrc} alt='' id='weather-icon'></img>
         <div id='weather'>
           <p id='weather-day'>{week[weekIndex]}</p>
-          <p style={{fontSize: 26, color: 'yellow'}}>{formatDate}</p>
-          <p style={{fontSize: 26, color: 'yellow'}}>{condition}</p>
-          <p style={{fontSize: 26, color: 'yellow'}}>Avg: {avgTempF} F°</p>
-          <p style={{fontSize: 14}}>___________________________</p>
-          <p style={{fontSize: 20}}>Max: {maxTempF} F°</p>
-          <p style={{fontSize: 20}}>Min: {minTempF} F°</p>
-          <p style={{fontSize: 20}}>Avg Humid: {avgHum}%</p>
-          <p style={{fontSize: 20}}>Max Wind: {maxWind}MPH</p>
-          <p style={{fontSize: 20}}>Rain: {rainChance}%</p>
-          <p style={{fontSize: 20}}>Snow: {snowChance}%</p>
-          <p style={{fontSize: 20}}>Avg Visib: {avgVis}M</p>
-          <p style={{fontSize: 20}}>Sunrise: {sunRise}</p>
-          <p style={{fontSize: 20}}>Sunset: {sunSet}</p>
+          <p style={{fontSize: 22, color: 'yellow'}}>{formatDate}</p>
+          <p style={{fontSize: 22, color: 'yellow'}}>{condition}</p>
+          <p style={{fontSize: 22, color: 'yellow'}}>Avg: {avgTempF} F°</p>
+          <p style={{fontSize: 10}}>___________________________</p>
+          <p style={{fontSize: 16}}>Max: {maxTempF} F°</p>
+          <p style={{fontSize: 16}}>Min: {minTempF} F°</p>
+          <p style={{fontSize: 16}}>Avg Humid: {avgHum}%</p>
+          <p style={{fontSize: 16}}>Max Wind: {maxWind}MPH</p>
+          <p style={{fontSize: 16}}>Rain: {rainChance}%</p>
+          <p style={{fontSize: 16}}>Snow: {snowChance}%</p>
+          <p style={{fontSize: 16}}>Avg Visib: {avgVis}M</p>
+          <p style={{fontSize: 16}}>Sunrise: {sunRise}</p>
+          <p style={{fontSize: 16}}>Sunset: {sunSet}</p>
         </div>
       </div>
 

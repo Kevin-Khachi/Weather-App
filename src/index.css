@@ -78,14 +78,14 @@ code {
 .tab {
   margin-top: 210px;
   background: rgb(48, 48, 48);
-  margin-left: 7.6%;
-  min-width: 40%;
-  height: 380px;
-  padding-bottom: 4.2%;
-  filter: opacity(75%);
-  -webkit-filter: opacity(75%);
-  -moz-filter: opacity(75%);
-  backdrop-filter: blur(75px);
+  margin-left: 7.1%;
+  min-width: 33%;
+  height: 310px;
+  padding-bottom: 4.1%;
+  filter: opacity(76%);
+  -webkit-filter: opacity(76%);
+  -moz-filter: opacity(76%);
+  backdrop-filter: blur(80px);
   /* border-radius: 8px 50px 49px 6px;
   -webkit-border-radius: 8px 50px 49px 6px;
   -moz-border-radius: 8px 50px 49px 6px; */
@@ -101,7 +101,7 @@ code {
   flex-direction: row;
   overflow: scroll;
   width: 100%;
-  height: 100vh;
+  height: 18%;
 }
 
 #weather-day {
@@ -111,7 +111,7 @@ code {
 #weather {
   margin-left: 5%;
   color: white;
-  width: 55%;
+  width: 75%;
   position: absolute;
   z-index: 9;
 }
@@ -119,7 +119,7 @@ code {
 #weather-icon {
   z-Index: 11;
   width: 40%;
-  margin-left: 54%;
+  margin-left: 59%;
   filter: opacity(75%);
   -webkit-filter: opacity(75%);
   -moz-filter: opacity(75%);
