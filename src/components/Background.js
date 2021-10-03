@@ -24,8 +24,8 @@ const Background = () => {
     try {
     const client = createClient('563492ad6f9170000100000139d0d4eff1a9443e9798b3bbaed0e386');
     let query = 'Los Angeles';
-    let randomPic = Math.floor(Math.random() * 61);
-    const data = await client.photos.search({query, per_page: 60});
+    let randomPic = Math.floor(Math.random() * 75);
+    const data = await client.photos.search({query, per_page: 74});
     console.log('Photo Data: ', data);
     let picWidth = data.photos[randomPic].width;
     let picHeight = data.photos[randomPic].height;
