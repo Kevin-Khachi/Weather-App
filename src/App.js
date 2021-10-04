@@ -32,14 +32,6 @@ function App() {
 
   }
 
-  //TEST - Key down event
-  const keyDownEvent = (e) => {
-    if (e.key === 'Enter') {
-      console.log('KEY PRESSED!!');
-      console.log('e: ', e);
-    }
-  }
-
   return (
     <div className="App">
       <Background />
