@@ -4,8 +4,6 @@ const SearchBar = () => {
     console.log("You pressed Enter!");
   }
 
-  const red = 'red';
-
   return (
 
     <>
