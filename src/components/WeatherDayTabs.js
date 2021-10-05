@@ -4,11 +4,13 @@ import HorizontalScroll from 'react-scroll-horizontal';
 
 const WeatherDayTabs = ({tabs}) => {
 
+  console.log('TABS: ', tabs);
+
   return (
     <>
       <div className='container-react-scroll'>
         <HorizontalScroll>
-        {tabs.forecast && tabs.forecast.forecastday.map((child, index) => {
+        {tabs?.forecast?.forecastday.map((child, index) => {
           return <WeatherDayTab key={index} day={child} />
         })}
         </HorizontalScroll>

@@ -2,6 +2,7 @@ import Background from './components/Background'
 import Header from './components/Header'
 import WeatherDayTabs from './components/WeatherDayTabs'
 import { useState, useEffect } from 'react';
+import SearchBar from './components/SearchBar';
 
 function App() {
 
@@ -37,7 +38,7 @@ function App() {
       <Background />
       <Header test={10}/>
       <WeatherDayTabs tabs={weather} />
-
+      <SearchBar/>
     </div>
   );
 }
