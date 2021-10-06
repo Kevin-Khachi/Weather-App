@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import { createClient } from 'pexels';
 
-const Background = () => {
+const Background = ({pictureQuery}) => {
+
+  //testing
+  console.log('pictureQuery: ', pictureQuery);
 
   //State & Use State Hooks
   const [bgImage, setBgImage] = useState('');
@@ -16,14 +19,14 @@ const Background = () => {
 
     getBGImages();
 
-  }, []);
+  });
 
   //Async Function used in Pexels API to fetch Background Image
   const fetchBGImage = async () => {
 
     try {
     const client = createClient('563492ad6f9170000100000139d0d4eff1a9443e9798b3bbaed0e386');
-    let query = 'Los Angeles';
+    let query = pictureQuery;
     let randomPic = Math.floor(Math.random() * 75);
     const data = await client.photos.search({query, per_page: 74});
     console.log('Photo Data: ', data);

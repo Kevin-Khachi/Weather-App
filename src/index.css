@@ -105,10 +105,9 @@ code {
   z-Index: 11;
   width: 40%;
   margin-left: 59%;
-  filter: opacity(75%);
-  -webkit-filter: opacity(75%);
-  -moz-filter: opacity(75%);
-  backdrop-filter: blur(75px);
+  filter: opacity(100%);
+  -webkit-filter: opacity(100%);
+  -moz-filter: opacity(100%);
   position: absolute;
 }
 
