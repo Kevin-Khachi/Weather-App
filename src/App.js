@@ -1,6 +1,6 @@
-import Background from './components/Background'
-import Header from './components/Header'
-import WeatherDayTabs from './components/WeatherDayTabs'
+import Background from './components/Background';
+import Header from './components/Header';
+import WeatherDayTabs from './components/WeatherDayTabs';
 import { useState, useEffect, /*useCallback*/ } from 'react';
 import SearchBar from './components/SearchBar';
 
@@ -8,16 +8,7 @@ function App() {
 
   //Use State Hook
   const [weather, updWeather] = useState({});
-  const [picQuery, updPicQuery] = useState('New York');
-
-  // //useCallback Hook
-  // const getWeather2 = useCallback(async (location) => {
-  //   console.log('getWeatherLocation: ', location);
-  //   updPicQuery(location);
-  //   const weatherData = await fetchWeather(location);
-  //   console.log('weatherData: ', weatherData);
-  //   updWeather(weatherData);
-  // }, []);
+  const [picQuery, updPicQuery] = useState('los angeles');
 
   //Effect Hook
   useEffect(() => {
@@ -45,10 +36,10 @@ function App() {
 
   return (
     <div className="App">
-      <Background pictureQuery={picQuery}/>
-      <Header test={10}/>
+      <Background pictureQuery={picQuery} />
+      <Header />
       <WeatherDayTabs tabs={weather} />
-      <SearchBar locationQuery={getWeather}/>
+      <SearchBar locationQuery={getWeather} />
     </div>
   );
 }

@@ -5,6 +5,7 @@ const SearchBar = ({locationQuery}) => {
       console.log('You pressed Enter!');
       console.log('Event: ', event.target.value);
       locationQuery(event.target.value)
+      event.target.value = '';
     }
   }
 
