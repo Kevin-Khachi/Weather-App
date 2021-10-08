@@ -173,6 +173,7 @@ code {
   -webkit-filter: opacity(70%) invert(25%);
   -moz-filter: opacity(70%) invert(25%);
   filter: opacity(70%) invert(25%);
+  cursor: pointer;
 }
 
 #hamburger {
@@ -190,4 +191,12 @@ code {
   -webkit-filter: opacity(70%) invert(25%);
   -moz-filter: opacity(70%) invert(25%);
   filter: opacity(70%) invert(25%);
+  cursor: pointer;
+}
+
+#currency-title:hover {
+  -webkit-filter: opacity(70%) invert(25%);
+  -moz-filter: opacity(70%) invert(25%);
+  filter: opacity(70%) invert(25%);
+  cursor: pointer;
 }
