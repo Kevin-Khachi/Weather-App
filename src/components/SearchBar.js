@@ -10,6 +10,10 @@ const SearchBar = ({locationQuery}) => {
     }
   }
 
+  const searchButton = () => {
+
+  }
+
   return (
 
     <>
