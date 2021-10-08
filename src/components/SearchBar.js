@@ -1,7 +1,8 @@
 const SearchBar = ({locationQuery}) => {
 
   const tabFallAnim = (event) => {
-    if (event.code === 'Enter') {
+    console.log('event: ', event);
+    if (event.code === 'Enter' || event.type ==='click') {
       console.log('You pressed Enter!');
       console.log('Event: ', event.target.value);
       locationQuery(event.target.value)

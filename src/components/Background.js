@@ -26,7 +26,7 @@ const Background = ({pictureQuery}) => {
   const isResHD = (photo) => {
     let picWidth = photo.width;
     let picHeight = photo.height;
-    return (picWidth >= 2048 && picWidth <= 4096) && (picHeight <= 2160 && picHeight >= 1080)
+    return (picWidth >= 1280 && picWidth <= 4096) && (picHeight <= 2160 && picHeight >= 720)
   }
 
   //Async Function used in Pexels API to fetch Background Image
@@ -35,16 +35,14 @@ const Background = ({pictureQuery}) => {
     try {
       const client = createClient('563492ad6f9170000100000139d0d4eff1a9443e9798b3bbaed0e386');
       let query = pictureQuery;
-      const data = await client.photos.search({query, per_page: 74});
+      const data = await client.photos.search({query, per_page: 20});
       console.log('Photo Data: ', data);
       let hqPhotos = data.photos.filter((photo) => isResHD(photo));
       let randomPic = Math.floor(Math.random() * hqPhotos.length);
       console.log('Random Pic: ', randomPic);
       const url = hqPhotos[randomPic].src.original;
-
       console.log('Photo URL: ', url);
       return url;
-
     } catch (error) {
 
         console.log(error + ' - Displaying Default Background');
