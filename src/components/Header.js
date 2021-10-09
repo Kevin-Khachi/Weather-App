@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div id='title'>
       <h1 id='title-text'>
-        <img id='hamburger' style={{maxWidth: 10 + '%', marginRight: 5 + '%', marginLeft: 5 + '%', verticalAlign: 'middle'}} alt='' src={hamburger} />
+        <img id='hamburger' className='hover' style={{maxWidth: 10 + '%', marginRight: 5 + '%', marginLeft: 5 + '%', verticalAlign: 'middle'}} alt='' src={hamburger} />
         <span style={{verticalAlign: 'middle'}}>
         Weather App
         </span>

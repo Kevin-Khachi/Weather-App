@@ -30,8 +30,8 @@ code {
   -webkit-filter: opacity(75%);
   -moz-filter: opacity(75%);
   backdrop-filter: blur(60px);
-  z-index: 10;
-  position: absolute;
+  z-index: 15;
+  position: fixed;
 }
 
 #title-text {
@@ -47,7 +47,6 @@ code {
   position: fixed;
   /* backdrop-filter: blur(20px); */
   /* backdrop-filter: grayscale(100); */
-  position: absolute;
 }
 
 .tab-border {
@@ -86,6 +85,9 @@ code {
   box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
   -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
   -moz-box-shadow: 1px 17px 35px 4px rgba(0,0,0,0.87);
+  border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
   z-index: 8;
 }
 
@@ -103,7 +105,7 @@ code {
 
 #weather-icon {
   z-Index: 11;
-  width: 42%;
+  width: 40%;
   margin-left: 59%;
   filter: opacity(100%);
   -webkit-filter: opacity(100%);
@@ -193,3 +195,32 @@ code {
   filter: opacity(70%) invert(25%);
   cursor: pointer;
 }
+
+#event-tab {
+  background: rgb(48, 48, 48);
+  width: 80%;
+  height: 70%;
+  top: 90%;
+  margin-top: 2%;
+  position: absolute;
+  filter: opacity(82%);
+  -webkit-filter: opacity(82%);
+  -moz-filter: opacity(82%);
+  backdrop-filter: blur(82px);
+  box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
+  -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
+  -moz-box-shadow: 1px 17px 35px 4px rgba(0,0,0,0.87);
+  border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  z-index: 18;
+  margin-bottom: 50%;
+  margin-left: 10%;
+}
+
+#event-title {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+

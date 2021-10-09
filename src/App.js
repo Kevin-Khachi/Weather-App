@@ -3,6 +3,7 @@ import Header from './components/Header';
 import WeatherDayTabs from './components/WeatherDayTabs';
 import { useState, useEffect, /*useCallback*/ } from 'react';
 import SearchBar from './components/SearchBar';
+import Events from './components/Events';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
       <Header />
       <WeatherDayTabs tabs={weather} />
       <SearchBar locationQuery={getWeather} />
+      <Events />
     </div>
   );
 }
