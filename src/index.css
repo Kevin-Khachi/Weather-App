@@ -73,21 +73,21 @@ code {
 }
 
 .tab {
-  background: rgb(48, 48, 48);
   margin-left: 1.8%;
   width: 25em;
   height: 150px;
   padding-bottom: 7.7%;
-  filter: opacity(82%);
-  -webkit-filter: opacity(82%);
-  -moz-filter: opacity(82%);
-  backdrop-filter: blur(82px);
   box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
   -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
   -moz-box-shadow: 1px 17px 35px 4px rgba(0,0,0,0.87);
   border-radius: 4px 4px 4px 4px;
   -webkit-border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
+  background: rgb(48, 48, 48);
+  filter: opacity(82%);
+  -webkit-filter: opacity(82%);
+  -moz-filter: opacity(82%);
+  backdrop-filter: blur(5px);
   z-index: 8;
 }
 
@@ -119,6 +119,7 @@ code {
   -webkit-filter: opacity(82%);
   -moz-filter: opacity(82%);
   backdrop-filter: blur(82px);
+  backdrop-filter: blur(5px);
 }
 
 .container-react-scroll {
@@ -199,14 +200,14 @@ code {
 #event-tab {
   background: rgb(48, 48, 48);
   width: 80%;
-  height: 70%;
+  height: 80%;
   top: 90%;
   margin-top: 2%;
   position: absolute;
   filter: opacity(82%);
   -webkit-filter: opacity(82%);
   -moz-filter: opacity(82%);
-  backdrop-filter: blur(82px);
+  backdrop-filter: blur(5px);
   box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
   -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
   -moz-box-shadow: 1px 17px 35px 4px rgba(0,0,0,0.87);
@@ -214,7 +215,6 @@ code {
   -webkit-border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
   z-index: 18;
-  margin-bottom: 50%;
   margin-left: 10%;
 }
 
@@ -222,5 +222,17 @@ code {
   color: white;
   text-align: center;
   font-size: 3rem;
+  z-index: 15;
 }
 
+.events-type {
+  font-size: 1.3rem;
+  color: white;
+  display: inline-block;
+  margin-left: 20%;
+  margin-top: 3%;
+}
+
+.each-event {
+  margin-right: 10%;
+}

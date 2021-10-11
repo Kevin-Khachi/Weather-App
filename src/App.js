@@ -10,16 +10,19 @@ function App() {
   //Use State Hook
   const [weather, updWeather] = useState({});
   const [picQuery, updPicQuery] = useState('los angeles');
+  const [events, updEvents] = useState('');
 
   //Effect Hook
   useEffect(() => {
 
   }, []);
 
-  const getWeather = async (location) => {
-    console.log('getWeatherLocation: ', location);
-    updPicQuery(location);
-    const weatherData = await fetchWeather(location);
+  const getWeather = async (city, state) => {
+    console.log('city: ', city);
+    console.log('getWeatherLocation: ', city);
+    updPicQuery(city);
+    updEvents(state);
+    const weatherData = await fetchWeather(city);
     console.log('weatherData: ', weatherData);
     updWeather(weatherData);
   };
@@ -41,7 +44,7 @@ function App() {
       <Header />
       <WeatherDayTabs tabs={weather} />
       <SearchBar locationQuery={getWeather} />
-      <Events />
+      <Events eventQuery={events}/>
     </div>
   );
 }
