@@ -17,11 +17,11 @@ function App() {
 
   }, []);
 
-  const getWeather = async (city, state) => {
+  const getEntry= async (city) => {
     console.log('city: ', city);
     console.log('getWeatherLocation: ', city);
     updPicQuery(city);
-    updEvents(state);
+    updEvents(city);
     const weatherData = await fetchWeather(city);
     console.log('weatherData: ', weatherData);
     updWeather(weatherData);
@@ -43,7 +43,7 @@ function App() {
       <Background pictureQuery={picQuery} />
       <Header />
       <WeatherDayTabs tabs={weather} />
-      <SearchBar locationQuery={getWeather} />
+      <SearchBar locationQuery={getEntry} />
       <Events eventQuery={events}/>
     </div>
   );

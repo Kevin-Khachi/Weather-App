@@ -21,7 +21,7 @@ const Background = ({pictureQuery}) => {
   const isResHD = (photo) => {
     let picWidth = photo.width;
     let picHeight = photo.height;
-    return (picWidth >= 1280 && picWidth <= 4096) && (picHeight <= 2160 && picHeight >= 720)
+    return (picWidth >= 1280 && picWidth <= 4096) && (picHeight <= 2160 && picHeight >= 720);
   }
 
   //Async Function used in Pexels API to fetch Background Image
