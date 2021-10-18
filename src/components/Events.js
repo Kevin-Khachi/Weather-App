@@ -55,12 +55,13 @@ const Events = ({eventQuery}) => {
             Flights
           </span>
         </h1>
-        <div>
-          {parks?.data?.map((child, index) => {
-            return <Event key={index} parkData={child} />
-          })}
+        <div id='events-wrapper'>
+          <div className='event' />
+            {parks?.data?.map((child, index) => {
+              return <Event key={index} parkData={child} />
+            })}
+          </div>
         </div>
-      </div>
     </>
   )
 

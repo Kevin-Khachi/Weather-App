@@ -5,15 +5,15 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -25,7 +25,7 @@ code {
   background: black;
   box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
   -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -moz-box-shadow: 1px 17px 35px 4px rgba(0,0,0,0.87);
+  -moz-box-shadow: 1px 17px 35px 4px rgba(0, 0, 0, 0.87);
   filter: opacity(75%);
   -webkit-filter: opacity(75%);
   -moz-filter: opacity(75%);
@@ -36,7 +36,7 @@ code {
 
 #title-text {
   font-size: 7vh;
-  color :white;
+  color: white;
   position: absolute;
   z-index: 3;
 }
@@ -54,10 +54,25 @@ code {
   margin-left: 20px;
   margin-right: 40px;
   margin-top: 210px;
-  background: rgba(20,0,255,0.96);
-  background: linear-gradient(124deg,rgba(20,0,255,0.96) 10%, #fff400 50%, #ff0000 100%);
-  background: -webkit-linear-gradient(124deg,rgba(20,0,255,0.96) 10%, #fff400 50%, #ff0000 100%);
-  background: -moz-linear-gradient(124deg,rgba(20,0,255,0.96) 10%, #fff400 50%, #ff0000 100%);
+  background: rgba(20, 0, 255, 0.96);
+  background: linear-gradient(
+    124deg,
+    rgba(20, 0, 255, 0.96) 10%,
+    #fff400 50%,
+    #ff0000 100%
+  );
+  background: -webkit-linear-gradient(
+    124deg,
+    rgba(20, 0, 255, 0.96) 10%,
+    #fff400 50%,
+    #ff0000 100%
+  );
+  background: -moz-linear-gradient(
+    124deg,
+    rgba(20, 0, 255, 0.96) 10%,
+    #fff400 50%,
+    #ff0000 100%
+  );
   z-index: 7;
   border-radius: 8px 50px 49px 6px;
   -webkit-border-radius: 8px 50px 49px 6px;
@@ -68,7 +83,7 @@ code {
   backdrop-filter: blur(60px);
   box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
   -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -moz-box-shadow: 1px 17px 35px 4px rgba(0,0,0,0.87);
+  -moz-box-shadow: 1px 17px 35px 4px rgba(0, 0, 0, 0.87);
   object-fit: contain;
 }
 
@@ -79,7 +94,7 @@ code {
   padding-bottom: 7.7%;
   box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
   -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -moz-box-shadow: 1px 17px 35px 4px rgba(0,0,0,0.87);
+  -moz-box-shadow: 1px 17px 35px 4px rgba(0, 0, 0, 0.87);
   border-radius: 4px 4px 4px 4px;
   -webkit-border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
@@ -104,7 +119,7 @@ code {
 }
 
 #weather-icon {
-  z-Index: 11;
+  z-index: 11;
   width: 40%;
   margin-left: 59%;
   filter: opacity(100%);
@@ -148,7 +163,7 @@ code {
   backdrop-filter: blur(72px);
   box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
   -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -moz-box-shadow: 1px 17px 35px 4px rgba(0,0,0,0.87);
+  -moz-box-shadow: 1px 17px 35px 4px rgba(0, 0, 0, 0.87);
 }
 
 #search-bar:hover {
@@ -170,7 +185,7 @@ code {
   backdrop-filter: blur(82px);
   box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
   -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -moz-box-shadow: 1px 17px 35px 4px rgba(0,0,0,0.87);
+  -moz-box-shadow: 1px 17px 35px 4px rgba(0, 0, 0, 0.87);
 }
 
 #mag-glass-icon:hover {
@@ -183,11 +198,11 @@ code {
 #hamburger {
   max-width: 13%;
   margin-left: 5%;
-  vertical-align: 'middle';
+  vertical-align: "middle";
 }
 
 #weather-title {
-  vertical-align: 'middle';
+  vertical-align: "middle";
 }
 
 .hover:hover {
@@ -210,7 +225,7 @@ code {
   backdrop-filter: blur(5px);
   box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
   -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -moz-box-shadow: 1px 17px 35px 4px rgba(0,0,0,0.87);
+  -moz-box-shadow: 1px 17px 35px 4px rgba(0, 0, 0, 0.87);
   border-radius: 4px 4px 4px 4px;
   -webkit-border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
@@ -235,4 +250,16 @@ code {
 
 .each-event {
   margin-right: 10%;
+}
+
+#events-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
