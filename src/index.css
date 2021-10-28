@@ -273,7 +273,7 @@ code {
 .event {
   display: flex;
   flex: 1;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 #events-wrapper div:nth-child(odd) {
