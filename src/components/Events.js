@@ -33,7 +33,6 @@ const Events = ({eventQuery}) => {
   }
 
   return (
-    <>
       <div id='event-tab'>
         <h1 id='event-title'>
           Events
@@ -56,13 +55,14 @@ const Events = ({eventQuery}) => {
           </span>
         </h1>
         <div id='events-wrapper'>
-          <div className='event' />
             {parks?.data?.map((child, index) => {
-              return <Event key={index} parkData={child} />
+              return (<div key={index} className='event' >
+                        <Event parkData={child} />
+                      </div>
+              )
             })}
           </div>
-        </div>
-    </>
+      </div>
   )
 
 }

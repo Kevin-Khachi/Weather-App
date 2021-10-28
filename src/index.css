@@ -89,12 +89,13 @@ code {
 
 .tab {
   margin-left: 1.8%;
+  flex-direction: row-reverse;
+  display: flex;
   width: 25em;
-  height: 150px;
-  padding-bottom: 7.7%;
-  box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -moz-box-shadow: 1px 17px 35px 4px rgba(0, 0, 0, 0.87);
+  height: 340px;
+  box-shadow: -10px 10px 9px 0px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: -10px 10px 9px 0px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: -10px 10px 9px 0px rgba(0, 0, 0, 0.52);
   border-radius: 4px 4px 4px 4px;
   -webkit-border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
@@ -114,18 +115,18 @@ code {
   margin-left: 5%;
   color: white;
   width: 75%;
-  position: absolute;
+  /* position: absolute; */
   z-index: 9;
 }
 
 #weather-icon {
   z-index: 11;
-  width: 40%;
-  margin-left: 59%;
+  width: 120px;
+  height: 120px;
   filter: opacity(100%);
   -webkit-filter: opacity(100%);
   -moz-filter: opacity(100%);
-  position: absolute;
+  /* position: absolute; */
 }
 
 .tab:hover {
@@ -138,11 +139,11 @@ code {
 }
 
 .container-react-scroll {
-  position: absolute;
-  top: 32%;
+  /* position: absolute; */
+  margin-top: 100px;
   width: 100%;
-  height: 67%;
-  z-index: 13;
+  height: 357px;
+  z-index: 19;
   transition: transform 2s;
   /* transform: translateY(20%) */
 }
@@ -150,7 +151,7 @@ code {
 #search-bar {
   z-index: 12;
   font-size: 3em;
-  position: absolute;
+  /* position: absolute; */
   top: 17%;
   left: 30%;
   height: 10%;
@@ -161,9 +162,9 @@ code {
   -webkit-filter: opacity(72%);
   -moz-filter: opacity(72%);
   backdrop-filter: blur(72px);
-  box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -moz-box-shadow: 1px 17px 35px 4px rgba(0, 0, 0, 0.87);
+  box-shadow: -10px 10px 9px 0px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: -10px 10px 9px 0px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: -10px 10px 9px 0px rgba(0, 0, 0, 0.52);
 }
 
 #search-bar:hover {
@@ -173,7 +174,7 @@ code {
 }
 
 #mag-glass-icon {
-  position: absolute;
+  /* position: absolute; */
   max-width: 7%;
   height: 10.5%;
   z-index: 13;
@@ -183,9 +184,9 @@ code {
   -webkit-filter: opacity(82%);
   -moz-filter: opacity(82%);
   backdrop-filter: blur(82px);
-  box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -moz-box-shadow: 1px 17px 35px 4px rgba(0, 0, 0, 0.87);
+  box-shadow: -10px 10px 9px 0px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: -10px 10px 9px 0px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: -10px 10px 9px 0px rgba(0, 0, 0, 0.52);
 }
 
 #mag-glass-icon:hover {
@@ -215,22 +216,22 @@ code {
 #event-tab {
   background: rgb(48, 48, 48);
   width: 80%;
-  height: 80%;
-  top: 90%;
-  margin-top: 2%;
-  position: absolute;
+  height: 600px;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-left: 10%;
+  /* position: absolute; */
   filter: opacity(82%);
   -webkit-filter: opacity(82%);
   -moz-filter: opacity(82%);
   backdrop-filter: blur(5px);
-  box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -webkit-box-shadow: 1px 17px 35px 4px rgb(0 0 0 / 87%);
-  -moz-box-shadow: 1px 17px 35px 4px rgba(0, 0, 0, 0.87);
+  box-shadow: -10px 10px 9px 0px rgba(0, 0, 0, 0.52);
+  -webkit-box-shadow: -10px 10px 9px 0px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: -10px 10px 9px 0px rgba(0, 0, 0, 0.52);
   border-radius: 4px 4px 4px 4px;
   -webkit-border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
   z-index: 14;
-  margin-left: 10%;
 }
 
 #event-title {
@@ -253,13 +254,31 @@ code {
 }
 
 #events-wrapper {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  overflow: auto;
+  height: 470px;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  background: rgba(66, 66, 66, 0.8);
+  /* filter: opacity(82%); */
+  /* -webkit-filter: opacity(82%); */
+  /* -moz-filter: opacity(82%); */
+  backdrop-filter: blur(5px);
 }
 
 .event {
   display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
   flex: 1;
+}
+
+#events-wrapper div:nth-child(odd) {
+  background: rgba(102, 102, 102, 0.8);
+}
+
+.event-content {
+
 }

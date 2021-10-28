@@ -29,21 +29,19 @@ function App() {
 
   //fetch weatherapi.com API
   const fetchWeather = async (location) => {
-
     console.log('fetchWeather location: ', location);
     const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=e1612587cc4f411b99243952212409&q&q=${location}&days=10&aqi=yes&alerts=yes`);
     const data = await res.json();
     console.log('Weather Data: ', data);
     return data;
-
   }
 
   return (
     <div className="App">
       <Background pictureQuery={picQuery} />
       <Header />
-      <WeatherDayTabs tabs={weather} />
       <SearchBar locationQuery={getEntry} />
+      <WeatherDayTabs tabs={weather} />
       <Events eventQuery={events}/>
     </div>
   );
