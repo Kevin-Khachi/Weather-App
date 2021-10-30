@@ -283,3 +283,7 @@ code {
 .event-content {
 
 }
+
+.url:link {
+  color: blue;
+}
