@@ -284,6 +284,6 @@ code {
 
 }
 
-.url:link {
-  color: blue;
+a:link {
+  color: lightblue;
 }

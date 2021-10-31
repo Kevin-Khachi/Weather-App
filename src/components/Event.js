@@ -20,7 +20,7 @@ const Event = ({parkData}) => {
           PHONE: {number}
         </h1>
         <h1 style={{fontSize: 15, color: 'white', marginTop: 7, zIndex: 17, marginLeft: 20}}>
-          WEBSITE: {url}
+          WEBSITE: <a href={url}>{url}</a>
         </h1>
       </div>
     </>
