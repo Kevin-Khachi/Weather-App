@@ -16,10 +16,10 @@ const SearchBar = ({locationQuery}) => {
 
   return (
 
-    <>
+    <div className='search-wrapper'>
       <input id='search-bar' placeholder='Enter city' type='text' onKeyDown={tabFallAnim} />
       <img src='https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX5621738.jpg' onClick={tabFallAnim} alt='' id='mag-glass-icon' />
-    </>
+    </div>
 
   )
 

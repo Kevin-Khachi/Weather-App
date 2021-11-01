@@ -37,13 +37,15 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <>
       <Background pictureQuery={picQuery} />
-      <Header />
-      <SearchBar locationQuery={getEntry} />
-      <WeatherDayTabs tabs={weather} />
-      <Events eventQuery={events}/>
-    </div>
+      <div className="App">
+        <Header />
+        <SearchBar locationQuery={getEntry} />
+        <WeatherDayTabs tabs={weather} />
+        <Events eventQuery={events}/>
+      </div>
+    </>
   );
 }
 
