@@ -35,7 +35,6 @@ const Events = ({eventQuery}) => {
   return (
       <div id='event-tab'>
         <h1 id='event-title'>
-          Events
         </h1>
         <div className='events-type'>
           <h1 className='hover'>
