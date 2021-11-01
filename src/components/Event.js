@@ -5,7 +5,7 @@ const Event = ({parkData}) => {
 
   return (
     <>
-      <img alt='' src={parkPic} style={{width: 32 + '%', height: 160,  marginLeft: 10}} />
+      <img alt='' className='event-image' src={parkPic} style={{width: 32 + '%', height: 160,  marginLeft: 10}} />
       <div className='event-content'>
         <h1 style={{fontSize: 27, color: 'white', zIndex: 17, marginLeft: 20, marginBottom: 12}}>
           {name}
