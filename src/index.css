@@ -238,19 +238,16 @@ code {
   color: white;
   text-align: center;
   font-size: 3rem;
+  text-decoration: underline;
   z-index: 15;
 }
 
 .events-type {
-  font-size: 1.3rem;
+  font-size: 0.87rem;
   color: white;
-  display: inline-block;
-  margin-left: 20%;
+  display: flex;
+  justify-content: space-around;
   margin-top: 3%;
-}
-
-.each-event {
-  margin-right: 10%;
 }
 
 #events-wrapper {
@@ -281,7 +278,6 @@ code {
 }
 
 .event-content {
-
 }
 
 a:link {

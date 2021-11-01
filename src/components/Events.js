@@ -37,23 +37,20 @@ const Events = ({eventQuery}) => {
         <h1 id='event-title'>
           Events
         </h1>
-        <h1 className='events-type'>
-          <span className='each-event hover' id='parks'>
+        <div className='events-type'>
+          <h1 className='hover'>
             Parks
-          </span>
-          <span className='each-event hover' id='museums'>
-            Museums
-          </span>
-          <span className='each-event hover' id='entertainment'>
+          </h1>
+          <h1 className='hover'>
             Entertainment
-          </span>
-          <span className='each-event hover' id='hotels'>
+          </h1>
+          <h1 className='hover'>
             Hotels
-          </span>
-          <span className='each-event hover' id='flights'>
+          </h1>
+          <h1 className='hover'>
             Flights
-          </span>
-        </h1>
+          </h1>
+        </div>
         <div id='events-wrapper'>
             {parks?.data?.map((child, index) => {
               return (<div key={index} className='event' >
