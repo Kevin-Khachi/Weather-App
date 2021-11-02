@@ -25,7 +25,6 @@ const WeatherDayTab = ({day}) => {
   return (
 
     <>
-
       <div className='tab'>
       <img src={weatherIconSrc} alt='' id='weather-icon'></img>
         <div id='weather'>
@@ -45,7 +44,6 @@ const WeatherDayTab = ({day}) => {
           <p style={{fontSize: 16}}>Sunset: {sunSet}</p>
         </div>
       </div>
-
     </>
   )
 
