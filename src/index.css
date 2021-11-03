@@ -134,7 +134,6 @@ code {
 
 #mag-glass-icon {
   width: 60px;
-  margin-left: 10px;
   filter: opacity(82%);
   -webkit-filter: opacity(82%);
   -moz-filter: opacity(82%);
@@ -142,13 +141,6 @@ code {
   box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.59);
   -webkit-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.59);
   -moz-box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.59);
-}
-
-#mag-glass-icon:hover {
-  -webkit-filter: opacity(70%) invert(25%);
-  -moz-filter: opacity(70%) invert(25%);
-  filter: opacity(70%) invert(25%);
-  cursor: pointer;
 }
 
 .search-wrapper {
