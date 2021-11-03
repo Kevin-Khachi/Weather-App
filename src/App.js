@@ -4,6 +4,7 @@ import WeatherDayTabs from './components/WeatherDayTabs';
 import { useState, useEffect, /*useCallback*/ } from 'react';
 import SearchBar from './components/SearchBar';
 import Events from './components/Events';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -70,6 +71,7 @@ function App() {
         <SearchBar locationQuery={getEntry} />
         {enteredQuery === true ? <WeatherDayTabs tabs={weather} /> : '' }
         {enteredQuery === true ?  <Events eventQuery={events} /> : ''}
+        <Footer />
       </div>
     </>
   );
