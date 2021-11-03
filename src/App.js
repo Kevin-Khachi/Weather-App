@@ -11,6 +11,7 @@ function App() {
   const [weather, updWeather] = useState({});
   const [picQuery, updPicQuery] = useState('los angeles');
   const [events, updEvents] = useState({});
+  const [enteredQuery, updEnteredQuery] = useState(false);
 
   //Effect Hook
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
   //function thats used in SearchBar.js that pulls data out for use in upper level App.js
   const getEntry = async (city) => {
     query = city;
+    updEnteredQuery(true);
     console.log('city: ', city);
     console.log('getWeatherLocation: ', city);
     updPicQuery(city);
@@ -48,18 +50,16 @@ function App() {
     const stateCitiesData = await citiesInState.json();
     console.log('stateCitiesData: ', stateCitiesData);
     console.log('Object.values(stateCitiesData: ', stateCitiesData);
-    if (query) {
-      const stateFullNames = Object.keys(stateCitiesData).filter(state => stateCitiesData[state].some(cityName => cityName.toLowerCase().startsWith(query)));
-      console.log('stateFullNames: ', stateFullNames);
-      const rawAbbrevStates = await fetch('https://gist.githubusercontent.com/mshafrir/2646763/raw/8b0dbb93521f5d6889502305335104218454c2bf/states_hash.json');
-      const abbrevStatesData = await rawAbbrevStates.json();
-      const stateAbbrev = Object.keys(abbrevStatesData).filter(stateFullName => abbrevStatesData[stateFullName] === stateFullNames[0]);
-      console.log('stateAbbrev: ', stateAbbrev);
-      const rawParkData = await fetch(`https://developer.nps.gov/api/v1/parks?stateCode=${stateAbbrev}&api_key=Gg0f7odlyewTGUBhgiM9SDwhYcN4tIghBaaKiW4q`);
-      const parksData = await rawParkData.json();
-      console.log('Parks Data: ', parksData);
-      return parksData;
-    }
+    const stateFullNames = Object.keys(stateCitiesData).filter(state => stateCitiesData[state].some(cityName => cityName.toLowerCase().startsWith(query)));
+    console.log('stateFullNames: ', stateFullNames);
+    const rawAbbrevStates = await fetch('https://gist.githubusercontent.com/mshafrir/2646763/raw/8b0dbb93521f5d6889502305335104218454c2bf/states_hash.json');
+    const abbrevStatesData = await rawAbbrevStates.json();
+    const stateAbbrev = Object.keys(abbrevStatesData).filter(stateFullName => abbrevStatesData[stateFullName] === stateFullNames[0]);
+    console.log('stateAbbrev: ', stateAbbrev);
+    const rawParkData = await fetch(`https://developer.nps.gov/api/v1/parks?stateCode=${stateAbbrev}&api_key=Gg0f7odlyewTGUBhgiM9SDwhYcN4tIghBaaKiW4q`);
+    const parksData = await rawParkData.json();
+    console.log('Parks Data: ', parksData);
+    return parksData;
   }
 
   return (
@@ -68,8 +68,8 @@ function App() {
       <div className="App">
         <Header />
         <SearchBar locationQuery={getEntry} />
-        <WeatherDayTabs tabs={weather} />
-        <Events eventQuery={events}/>
+        {enteredQuery === true ? <WeatherDayTabs tabs={weather} /> : '' }
+        {enteredQuery === true ?  <Events eventQuery={events} /> : ''}
       </div>
     </>
   );
