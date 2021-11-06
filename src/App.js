@@ -66,13 +66,13 @@ function App() {
   return (
     <>
       <Background pictureQuery={picQuery} />
-      <div className="App">
+      <div className="main">
         <Header />
         <SearchBar locationQuery={getEntry} />
         {enteredQuery === true ? <WeatherDayTabs tabs={weather} /> : '' }
         {enteredQuery === true ?  <Events eventQuery={events} /> : ''}
-        <Footer />
       </div>
+      <Footer condition={enteredQuery} />
     </>
   );
 }

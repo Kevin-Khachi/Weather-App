@@ -1,7 +1,7 @@
-const Footer = () => {
+const Footer = ({condition}) => {
 
   return (
-    <div id='footer'>
+    <div className={condition === false ? 'footer adjust-footer' : 'footer'}>
 
     </div>
   )
