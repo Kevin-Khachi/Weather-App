@@ -245,6 +245,8 @@ a:link {
 
 .footer {
   display: flex;
+  justify-content: center;
+  gap: 100px;
   z-index: 12;
   height: 120px;
   background: rgba(66, 66, 66, 0.8);
