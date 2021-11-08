@@ -27,7 +27,7 @@ const Background = ({pictureQuery}) => {
   //Async Function used in Pexels API to fetch Background Image
   const fetchBGImage = async () => {
     try {
-      const client = createClient('563492ad6f9170000100000139d0d4eff1a9443e9798b3bbaed0e386');
+      const client = createClient(process.env.REACT_APP_PICTURE_API_KEY);
       let query = pictureQuery;
       const data = await client.photos.search({query, per_page: 20});
       console.log('Photo Data: ', data);
@@ -38,10 +38,8 @@ const Background = ({pictureQuery}) => {
       console.log('Photo URL: ', url);
       return url;
     } catch (error) {
-
         console.log(error + ' - Displaying Default Background');
         return 'https://images.unsplash.com/photo-1462823985959-022de68638a2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=2160&ixid=MnwxfDB8MXxyYW5kb218MHx8bmF0dXJlLHdhdGVyfHx8fHx8MTYzMzEzMTc5MA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=4096';
-
     }
   }
 
