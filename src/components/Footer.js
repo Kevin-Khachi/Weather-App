@@ -18,10 +18,10 @@ const Footer = ({condition}) => {
         <a href="https://www.nps.gov/index.htm" title="National Park Service API" >
           <img src={npsLogo} alt="Park Data by nps.gov" className='logo' style={{height: 53, marginTop: 10}}/>
         </a>
-        <a href="https://www.nps.gov/index.htm" title="National Park Service API" >
-          <img src={githubLogo} alt="Park Data by nps.gov" className='logo' style={{height: 47, marginTop: 10}}/>
+        <a href="https://github.com/KevinCoder100/Weather-App" title="Creator's Github Repo" >
+          <img src={githubLogo} alt='' className='logo' style={{height: 47, marginTop: 10}}/>
         </a>
-        <a href="https://www.nps.gov/index.htm" title="National Park Service API" >
+        <a href="https://www.linkedin.com/in/kevin-k-05464120b/" title="Creator's LinkedIn" >
           <img src={linkedinLogo} alt="Park Data by nps.gov" className='logo' style={{height: 47, marginTop: 10}}/>
         </a>
       </div>
