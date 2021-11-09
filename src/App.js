@@ -39,7 +39,7 @@ function App() {
   //fetch weatherapi.com API
   const fetchWeather = async (location) => {
     console.log('fetchWeather location: ', location);
-    const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=e1612587cc4f411b99243952212409&q&q=${location}&days=10&aqi=yes&alerts=yes`);
+    const res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_API_KEY}&q&q=${location}&days=10&aqi=yes&alerts=yes`);
     const data = await res.json();
     console.log('Weather Data: ', data);
     return data;
@@ -47,7 +47,7 @@ function App() {
 
   //fetch from npa.gov and city state abbrev json data
   const fetchPark = async () => {
-    const citiesInState = await fetch('https://gist.githubusercontent.com/ahmu83/38865147cf3727d221941a2ef8c22a77/raw/c647f74643c0b3f8407c28ddbb599e9f594365ca/US_States_and_Cities.json');
+    const citiesInState = await fetch(`https://gist.githubusercontent.com/ahmu83/38865147cf3727d221941a2ef8c22a77/raw/c647f74643c0b3f8407c28ddbb599e9f594365ca/US_States_and_Cities.json`);
     const stateCitiesData = await citiesInState.json();
     console.log('stateCitiesData: ', stateCitiesData);
     console.log('Object.values(stateCitiesData: ', stateCitiesData);
@@ -57,7 +57,7 @@ function App() {
     const abbrevStatesData = await rawAbbrevStates.json();
     const stateAbbrev = Object.keys(abbrevStatesData).filter(stateFullName => abbrevStatesData[stateFullName] === stateFullNames[0]);
     console.log('stateAbbrev: ', stateAbbrev);
-    const rawParkData = await fetch(`https://developer.nps.gov/api/v1/parks?stateCode=${stateAbbrev}&api_key=Gg0f7odlyewTGUBhgiM9SDwhYcN4tIghBaaKiW4q`);
+    const rawParkData = await fetch(`https://developer.nps.gov/api/v1/parks?stateCode=${stateAbbrev}&api_key=${process.env.REACT_APP_PARK_API_KEY}`);
     const parksData = await rawParkData.json();
     console.log('Parks Data: ', parksData);
     return parksData;
