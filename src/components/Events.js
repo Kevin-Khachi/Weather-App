@@ -6,22 +6,8 @@ const Events = ({eventQuery}) => {
 
   return (
       <div id='event-tab'>
-        <h1 id='event-title'>
-            Events
-        </h1>
-        <div className='events-type'>
-          <h1 className='hover'>
+        <div id='event-title'>
             Parks
-          </h1>
-          <h1 className='hover'>
-            Entertainment
-          </h1>
-          <h1 className='hover'>
-            Hotels
-          </h1>
-          <h1 className='hover'>
-            Flights
-          </h1>
         </div>
         <div id='events-wrapper'>
             {eventQuery?.data?.map((child, index) => {

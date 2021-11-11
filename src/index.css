@@ -40,9 +40,9 @@ code {
 }
 
 #title-text {
-  font-size: 7vh;
+  font-size: 8vh;
   color: white;
-  position: absolute;
+  text-align: center;
   z-index: 3;
 }
 
@@ -170,7 +170,7 @@ code {
 #event-tab {
   background: rgb(48, 48, 48);
   width: 80%;
-  height: 600px;
+  height: 555px;
   margin-bottom: 50px;
   margin-left: 10%;
   margin-top: 15px;
@@ -189,7 +189,7 @@ code {
 #event-title {
   color: white;
   text-align: center;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-size: 3rem;
 }
 

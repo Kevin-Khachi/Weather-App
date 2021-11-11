@@ -25,7 +25,7 @@ const Footer = ({condition}) => {
           <img src={linkedinLogo} alt="Park Data by nps.gov" className='logo' style={{height: 47, marginTop: 10}}/>
         </a>
       </div>
-      <div className='logo' style={{fontSize: 30, color: 'white', textDecoration: 'underline', textAlign: 'center', marginTop: 6}} >
+      <div className='logo' style={{fontSize: 25, color: 'white', textDecoration: 'underline', textAlign: 'center', marginTop: 6}} >
         Email: kkhachi@yahoo.com
       </div>
     </div>
