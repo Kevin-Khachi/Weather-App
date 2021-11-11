@@ -9,19 +9,19 @@ const Footer = ({condition}) => {
   return (
     <div className={condition === false ? 'footer adjust-footer' : 'footer'}>
       <div id='footer-flex1'>
-        <a href="https://www.weatherapi.com/" title="Free Weather API">
+        <a href="https://www.weatherapi.com/" target="_blank" rel="noopener noreferrer" title="Free Weather API">
           <img src={weatherLogo} alt="Weather data by WeatherAPI.com" className='logo' style={{height: 45, marginTop: 10}} />
         </a>
-        <a href="https://reactjs.org/" title="React Library">
+        <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer" title="React Library">
           <img src={reactLogo} alt="Javascript Library by Facebook" className='logo' style={{height: 45, marginTop: 10}} />
         </a>
-        <a href="https://www.nps.gov/index.htm" title="National Park Service API" >
+        <a href="https://www.nps.gov/index.htm" target="_blank" rel="noopener noreferrer" title="National Park Service API" >
           <img src={npsLogo} alt="Park Data by nps.gov" className='logo' style={{height: 53, marginTop: 10}}/>
         </a>
-        <a href="https://github.com/KevinCoder100/Weather-App" title="Creator's Github Repo" >
+        <a href="https://github.com/KevinCoder100/Weather-App" target="_blank" rel="noopener noreferrer" title="Creator's Github Repo" >
           <img src={githubLogo} alt='' className='logo' style={{height: 47, marginTop: 10}}/>
         </a>
-        <a href="https://www.linkedin.com/in/kevin-k-05464120b/" title="Creator's LinkedIn" >
+        <a href="https://www.linkedin.com/in/kevin-k-05464120b/" target="_blank" rel="noopener noreferrer" title="Creator's LinkedIn" >
           <img src={linkedinLogo} alt="Park Data by nps.gov" className='logo' style={{height: 47, marginTop: 10}}/>
         </a>
       </div>
