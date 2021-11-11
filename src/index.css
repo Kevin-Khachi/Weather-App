@@ -173,7 +173,7 @@ code {
   height: 600px;
   margin-bottom: 50px;
   margin-left: 10%;
-  /* position: absolute; */
+  margin-top: 15px;
   filter: opacity(82%);
   -webkit-filter: opacity(82%);
   -moz-filter: opacity(82%);
